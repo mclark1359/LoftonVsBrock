@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.game{
+  width: 1000px;
+  height: 500px;
+  border: 1px black solid;
+  background: #f50ab2;
+background: linear-gradient(270deg, rgba(245, 10, 178, 0.26) 0%, rgba(9, 121, 106, 0.43) 18%, rgba(0, 212, 255, 1) 39%);
+}
+
+.character{
+  width: 75px;
+  height: 100px;
+  contain: content;
+  position: relative;
+  top: 400px;
+}
+
+.character img{
+  height: 100%;
+  width: 100%;
+}
+
+.enemy{
+  width: 75px;
+  height: 100px;
+  contain: content;
+  position: relative;
+  top: 300px;
+  left: 925px;
+}
+
+.enemyAnimate{
+  animation:enemy 1.5s linear infinite;
+}
+
+.enemy img{
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes enemy{
+  0%{left: 925px;}
+  100%{left:0px;}
+}
+
+button{
+  width: 100px;
+}
+
+@keyframes jump{
+  0%{top: 400px;}
+  30%{top: 200px;}
+  70%{top: 400px;}
+}
+
+.jump{
+  animation: jump 1s;
+}
